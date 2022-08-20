@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="./../dist/output.css" rel="stylesheet" />
+    
+    <title>Hellfire Wall</title>
+</head>
+<body class="bg-red-800 space-y-4  font-mono">
+
+    <!--Handels main setup of the page-->
+    <form id="border-control" class="m-4 ">
+        <div class=" bg-red-700">Setup Grid Configuration</div>
+        <input type="number" id="gridWidth" placeholder="width">
+        <input type="number" id="gridHeight" placeholder="height">
+        <input type="button" onclick="makeGrid()" value="Create Grid" class="cursor-pointer w-40 rounded bg-slate-400 hover:bg-slate-500" />
+    </form>
+
+    <!--Adds players and creates legend -->
+    <form id="player-setup" class="m-4">
+        <label class="w-40 bg-slate-400 rounded">New Character :</label>
+        <input id="player-name" type="text" placeholder="Eddie" />
+        <input type="button" onclick="AddPlayer()" name="Add Player" class="cursor-pointer w-40 rounded bg-slate-400 hover:bg-slate-500" value="Add Player" />
+    </form>
+
+    <div id="player-pool" class="bg-white m-4 "></div>
+
+    <div id="backdrop" class="bg-white m-4"> </div>
+    <script src="./../main.js"></script>
+</body>
+</html>

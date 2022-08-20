@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+span {
+   background-color:aqua ;
+   border: double 2px black;
+   padding: 8px;
+}
